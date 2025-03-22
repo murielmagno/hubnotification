@@ -1,7 +1,7 @@
 package hub.notification.service;
 
 import hub.notification.component.JwtUtil;
-import hub.notification.dto.AuthRequest;
+import hub.notification.dto.auth.AuthRequest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.security.authentication.AuthenticationManager;
