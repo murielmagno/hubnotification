@@ -6,9 +6,6 @@ spring:
     driver-class-name: org.postgresql.Driver
 
   flyway:
-    url: jdbc:postgresql://postgres:5432/notification
-    user: admin
-    password: admin
     enabled: true
     baseline-on-migrate: true
 
@@ -24,4 +21,15 @@ spring:
   application:
     name: notification
     version: 0.0.1
+    key: 'dvdyexodchya9kg4f3qjt!m^^_yz298-(7#q%ywuz)%52)aage'
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+logging:
+  level:
+    root: INFO
+    hub.notification: DEBUG
 
