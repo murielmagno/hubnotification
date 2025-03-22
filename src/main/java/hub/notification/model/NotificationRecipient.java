@@ -15,11 +15,9 @@ public class NotificationRecipient {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "notification_id")
-    private Notification notification;
+    @Column(name = "notification_id", nullable = false)
+    private Long notificationId;
 
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "recipient_id")
-    private Recipient recipient;
+    @Column(name = "recipient_id", nullable = false)
+    private Long recipientId;
 }

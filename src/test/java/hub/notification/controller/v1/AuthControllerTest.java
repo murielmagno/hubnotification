@@ -1,7 +1,8 @@
-package hub.notification.controller;
+package hub.notification.controller.v1;
 
-import hub.notification.dto.AuthRequest;
-import hub.notification.dto.AuthResponse;
+import hub.notification.controller.v1.auth.AuthController;
+import hub.notification.dto.auth.AuthRequest;
+import hub.notification.dto.auth.AuthResponse;
 import hub.notification.service.AuthService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

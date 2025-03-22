@@ -1,7 +1,7 @@
 package hub.notification.model;
 
 import hub.notification.model.base.BaseUpdateEntity;
-import hub.notification.model.enums.ScheduleStatusEnum;
+import hub.notification.dto.enums.ScheduleStatusEnum;
 import jakarta.persistence.*;
 import lombok.*;
 

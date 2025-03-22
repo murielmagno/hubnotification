@@ -1,7 +1,7 @@
 package hub.notification.model;
 
 import hub.notification.model.base.BaseEntity;
-import hub.notification.model.enums.ChannelEnum;
+import hub.notification.dto.enums.ChannelEnum;
 import jakarta.persistence.*;
 import lombok.*;
 
