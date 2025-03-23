@@ -11,9 +11,6 @@ spring:
 
   jpa:
     database: POSTGRESQL
-    show-sql: true
-    hibernate:
-      ddl-auto: update
     properties:
       hibernate:
         format_sql: true
@@ -33,3 +30,8 @@ logging:
     root: INFO
     hub.notification: DEBUG
 
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
