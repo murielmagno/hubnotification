@@ -1,7 +1,7 @@
 package hub.notification.model;
 
-import hub.notification.model.base.BaseUpdateEntity;
 import hub.notification.dto.enums.ScheduleStatusEnum;
+import hub.notification.model.base.BaseUpdateEntity;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -13,9 +13,9 @@ import lombok.*;
 @Builder
 @Table(name = "notification_schedule")
 public class NotificationSchedule extends BaseUpdateEntity {
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "notification_id")
+    @OneToOne(optional = false)
+    @JoinColumn(name = "notification_id", unique = true)
     private Notification notification;
     @Enumerated(EnumType.STRING)
-    private ScheduleStatusEnum status = ScheduleStatusEnum.SCHEDULED;
+    private ScheduleStatusEnum status;
 }
