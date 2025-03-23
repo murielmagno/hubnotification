@@ -1,4 +1,8 @@
 spring:
+  application:
+    name: notification
+    version: 0.0.1
+    key: 'dvdyexodchya9kg4f3qjt!m^^_yz298-(7#q%ywuz)%52)aage'
   datasource:
     url: jdbc:postgresql://localhost:5432/notification
     username: admin
@@ -15,10 +19,6 @@ spring:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
-  application:
-    name: notification
-    version: 0.0.1
-    key: 'dvdyexodchya9kg4f3qjt!m^^_yz298-(7#q%ywuz)%52)aage'
 
 server:
   port: 8080
